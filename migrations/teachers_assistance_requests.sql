@@ -13,7 +13,7 @@ CREATE TABLE assistance_requests (
   assignment_id INTEGER REFERENCES assignments(id) ON DELETE CASCADE,
   created_at TIMESTAMP,
   started_at TIMESTAMP,
-  completed_at DATE,
+  completed_at TIMESTAMP,
   student_feedback TEXT,
   teacher_feedback TEXT
 )
